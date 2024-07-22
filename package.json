@@ -1,0 +1,11 @@
+{
+  "name": "types",
+  "version": "0.0.1",
+  "types": "dist",
+  "scripts": {
+    "build": "nest build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11"
+  }
+}
