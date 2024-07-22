@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "types": "dist",
   "scripts": {
-    "build": "nest build"
+    "build": "tsc"
   },
   "devDependencies": {
-    "@types/node": "^20.14.11"
+    "@types/node": "^20.14.11",
+    "typescript": "^5.5.3"
   }
 }
