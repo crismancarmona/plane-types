@@ -4,7 +4,7 @@ export class Plane {
   intervals?: NodeJS.Timeout[] = [];
   port?: string;
 
-  constructor(readonly id: string) {}
+  constructor(readonly id: string, readonly numberId: number) {}
 }
 
 export class PlaneDto implements Partial<Plane> {}
