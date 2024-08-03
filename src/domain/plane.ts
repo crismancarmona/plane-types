@@ -1,6 +1,6 @@
 import { PlaneStats } from "./plane-stats";
 import { PlaneState } from "./plane-state";
-import { PlaneIntervals } from "./plane-intervals";
+import { PlaneFunction } from "./plane-function";
 
 export class Plane {
   stats: Partial<PlaneStats> = {
@@ -10,9 +10,9 @@ export class Plane {
     state: PlaneState.OFF,
   };
   isOn?: boolean = false;
-  intervals?: Map<PlaneIntervals, NodeJS.Timeout> = new Map<
-    PlaneIntervals,
-    NodeJS.Timeout
+  functions?: Map<PlaneFunction, (plane: Plane) => void> = new Map<
+    PlaneFunction,
+    (plane: Plane) => void
   >();
   updatedAt?: Date;
 
@@ -28,7 +28,7 @@ export class Plane {
 
   getDTO(): PlaneDto {
     const dto = { ...this };
-    delete dto.intervals;
+    delete dto.functions;
 
     return dto;
   }

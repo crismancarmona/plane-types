@@ -1,5 +1,5 @@
 {
-  "name": "types",
+  "name": "plane-types",
   "version": "0.0.1",
   "types": "dist",
   "scripts": {
