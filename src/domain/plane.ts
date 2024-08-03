@@ -1,7 +1,19 @@
+import { PlaneStats } from "./plane-stats";
+import { PlaneState } from "./plane-state";
+import { PlaneIntervals } from "./plane-intervals";
+
 export class Plane {
-  currentPosition?: { x: number; y: number; z: number } = { x: 0, y: 0, z: 0 };
+  stats: Partial<PlaneStats> = {
+    x: 0,
+    y: 0,
+    z: 0,
+    state: PlaneState.OFF,
+  };
   isOn?: boolean = false;
-  intervals?: NodeJS.Timeout[] = [];
+  intervals?: Map<PlaneIntervals, NodeJS.Timeout> = new Map<
+    PlaneIntervals,
+    NodeJS.Timeout
+  >();
   updatedAt?: Date;
 
   constructor(
