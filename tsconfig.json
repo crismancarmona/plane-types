@@ -3,10 +3,10 @@
     "declaration": true,
     "emitDeclarationOnly": false,
     "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
-  },
-  "include": ["src"]
+    "module": "NodeNext",
+    "skipLibCheck": true,
+    "isolatedModules": true,
+  }
 }
