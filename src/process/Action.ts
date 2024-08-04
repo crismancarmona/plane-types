@@ -3,4 +3,5 @@ export enum Action {
   TAKE_OFF,
   STOP_ENGINE,
   ROTATE,
+  ACELERATE,
 }
