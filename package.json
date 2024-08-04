@@ -1,6 +1,6 @@
 {
   "name": "@crisman999/plane-types",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "types": "index.d.ts",
   "scripts": {
     "build": "tsc"
