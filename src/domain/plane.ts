@@ -34,4 +34,4 @@ export class Plane {
   }
 }
 
-export class PlaneDto implements Partial<Plane> {}
+export interface PlaneDto extends Partial<Plane> {}

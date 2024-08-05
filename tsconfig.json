@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
+    "target": "ESNext",    
     "declaration": true,
+    "declarationMap": true,
     "emitDeclarationOnly": false,
+    "outDir": "./dist",                      
+    "rootDir": "./src", 
     "sourceMap": true,
+    "moduleResolution": "NodeNext",
     "strict": true,
     "esModuleInterop": true,
     "module": "NodeNext",
     "skipLibCheck": true,
     "isolatedModules": true,
-  }
+  },
+  "include": ["src/**/*"],                 
+  "exclude": ["node_modules", "**/*.test.ts"] 
 }
